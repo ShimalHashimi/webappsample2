@@ -26,7 +26,7 @@ namespace FirstWebApplication
             }
             else
             {
-                SignUpUser();
+                SignUpUser(); 
             }
         }
 
@@ -67,6 +67,53 @@ namespace FirstWebApplication
         {
             try
             {
+                bool isValid = true;
+
+                if (string.IsNullOrWhiteSpace(TextBox1.Text))
+                {
+                    TextBox1.BorderColor = System.Drawing.Color.Red; 
+                    Label1.Text = "Email is required.";
+                    Label1.ForeColor = System.Drawing.Color.Red;
+                    isValid = false;
+                }
+                else
+                {
+                    TextBox1.BorderColor = System.Drawing.Color.Empty; 
+                    Label1.Text = "";
+                }
+
+                if (string.IsNullOrWhiteSpace(TextBox2.Text))
+                {
+                    TextBox2.BorderColor = System.Drawing.Color.Red;
+                    Label2.Text = "Username is required.";
+                    Label2.ForeColor = System.Drawing.Color.Red;
+                    isValid = false;
+                }
+                else
+                {
+                    TextBox2.BorderColor = System.Drawing.Color.Empty;
+                    Label2.Text = "";
+                }
+
+                if (string.IsNullOrWhiteSpace(TextBox3.Text))
+                {
+                    TextBox3.BorderColor = System.Drawing.Color.Red;
+                    Label3.Text = "Password is required.";
+                    Label3.ForeColor = System.Drawing.Color.Red;
+                    isValid = false;
+                }
+                else
+                {
+                    TextBox3.BorderColor = System.Drawing.Color.Empty;
+                    Label3.Text = "";
+                }
+
+                if (!isValid)
+                {
+                    return;
+                }
+
+                // Database operations
                 SqlConnection con = new SqlConnection(connectionString);
                 if (con.State == ConnectionState.Closed)
                 {
@@ -78,8 +125,8 @@ namespace FirstWebApplication
                 cmd.Parameters.AddWithValue("@UP", TextBox3.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Registered successfully...!'); window.location='loginpage.aspx';</script>");
 
+                Response.Write("<script>alert('Registered successfully...!'); window.location='loginpage.aspx';</script>");
             }
             catch (Exception ex)
             {
@@ -92,5 +139,6 @@ namespace FirstWebApplication
                 TextBox3.Text = "";
             }
         }
+
     }
 }

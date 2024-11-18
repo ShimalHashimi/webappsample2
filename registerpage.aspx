@@ -12,14 +12,18 @@
                 <div class="input-group">
                     <label for="email">Email</label>
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                 </div>
                 <div class="input-group">
                     <label for="username">Username</label>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+                 
                 </div>
                 <asp:Button ID="submitSignUp" runat="server" Text="Submit" Class="btn btn-outline-dark btn-lg button" OnClick="submitSignUp_Click" />
                 <p>Already have an account? <a href="loginpage.aspx">Login here</a></p>

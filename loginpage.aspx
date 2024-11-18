@@ -10,11 +10,11 @@
             <form id="login-form">
                 <div class="input-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </div>
                 <asp:Button ID="submitLogin" runat="server" Text="LogIn" Class="btn btn-outline-dark btn-lg button" OnClick="submitLogin_Click" />
                 <p>If you don't have account, <a href="registerpage.aspx">Register here</a></p>

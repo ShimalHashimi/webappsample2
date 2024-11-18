@@ -37,7 +37,7 @@
     <form id="form1" runat="server">
         <!--======================  navbar-section  ======================-->
         <nav class="navbar">
-            <a href="homepage.aspx"><img style="width: 150px; height: 51px;" src="Images/logo-no-background.png" alt=""></a>
+            <a href="index.aspx"><img style="width: 150px; height: 51px;" src="Images/logo-no-background.png" alt=""></a>
         </nav>
 
         <div class="placeHolder-1">
