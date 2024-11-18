@@ -1,0 +1,281 @@
+*{
+    top: 0;
+    left: 0;
+}
+body{
+     background-color: #f1fdfc;
+}
+.navbar{
+    padding: 20px 40px 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #f1fdfc;
+}
+.navbar img {
+    margin:10px 50px;
+}
+.placeHolder-1 {
+    background-color: #f1fdfc;
+    padding:40px 10px 20px 10px;
+}
+.hidden-h1{
+    display: none;
+    color: #0c4058;
+}
+.heading-section{
+    width: 90%;
+    margin: 0px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.heading img{
+    width: 600px;
+}
+.heading-text{
+    text-align: center;
+}
+.heading-text h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #0c4058;
+}
+.heading-text p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.heading-text a{
+    margin-top: 10px;
+    width:100%;
+}
+.heading-text i{
+    margin-right: 10px;
+}
+.bottom-section{
+    background-color: #0c4058;
+   padding: 20px 0 20px;
+   text-align: center;
+}
+.bottom-section a{
+    text-decoration: none;
+    color: #ffffff;
+    margin:20px;
+}
+
+.bottom-section p{
+    margin-top: 0px;
+    margin-bottom: 0;
+    color: gray;
+    text-align: center;
+}
+
+.bottom-section a:hover{
+    color: #4385a4;
+}
+
+/*================  login-section   =====================*/
+.login-section{
+    width: 90%;
+    margin: 20px auto 60px auto;
+    display: flex;
+    align-items: center;
+}
+.login-img img{
+    width: 700px;
+}
+.login-box {
+    margin-left: 40px;
+    width: 70%;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+
+/*================  message-section   =====================*/
+
+.messageDiv{
+    background-color: #922d2d;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+
+}
+
+/*================  media-section   =====================*/
+
+@media screen and (max-width:1300px) {
+    .placeHolder-1 {
+        padding: 25px 10px 20px 10px;
+    }
+    .heading{
+        margin: 0px auto 30px auto;
+    }
+    .heading-text h1{
+        font-size: 3rem;
+    }
+    .heading img{
+        width: 450px;
+    }
+    .heading-text p{
+        margin-top: 10px;
+    }
+    .heading-text button{
+        margin-top:0px;
+    }
+    .login-img img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:1165px) {
+    
+    .heading-text h1{
+        font-size: 2.5rem;
+    }
+    .heading img{
+        width: 400px;
+    }
+    .heading-text button{
+        margin-top:0px;
+    }
+    .login-section{
+        margin: 20px auto 60px auto;
+    }
+    .login-box {
+        margin-left: 20px;
+        width: 80%;
+        padding: 20px 30px;
+    }
+    .login-box h2 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .placeHolder-1 {
+        padding: 15px 10px 20px 10px;
+    }
+    .hidden-h1{
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .heading-section{
+        margin: 40px auto 50px auto;
+    }
+    .heading-text h1{
+        display: none;
+    }
+    .heading-text p{
+        font-size: 1.1rem;
+    }
+    .heading img{
+        width: 350px;
+    }
+    .login-section{
+        margin: 40px auto;
+    }
+    .login-img img{
+        width: 400px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .heading{
+        text-align: center;
+    }
+    .hidden-h1{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .heading-section{
+        margin: 20px auto 50px auto;
+        display: block;
+    }
+    .heading-text h1{
+        display: none;
+    }
+    .heading-text p{
+        font-size: 1.1rem;
+    }
+    .heading img{
+        width: 80%;
+    }
+    .login-section{
+        display: block;
+    }
+    .login-img img{
+        position: absolute;
+        width: 90%;
+        margin-top: 100px;
+        margin-left: 20px;
+        z-index: -1;
+    }
+    .login-box{
+        width: 100%;
+        margin: 20px auto;
+        background-color: rgb(255, 255, 255, 0.95);
+    }
+}
+@media screen and (max-width:500px) {
+    .hidden-h1 {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .heading-text p{
+        font-size:0.8rem;
+    }
+}

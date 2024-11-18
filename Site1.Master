@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FirstWebApplication.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HSMTechie (Pvt) Ltd.</title>
+    
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="Style/style.css">
+        <link rel="icon" href="Images/HSMTechie_logo.png">
+
+
+    <!--Bootstrap css-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables  css-->
+    <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!--jquery js-->
+    <script src="bootstrap/js/jquery.slim.min.js"></script>
+    <!--popper js-->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <!--boosrtap js-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--======================  navbar-section  ======================-->
+        <nav class="navbar">
+            <a href="homepage.aspx"><img style="width: 150px; height: 51px;" src="Images/logo-no-background.png" alt=""></a>
+        </nav>
+
+        <div class="placeHolder-1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <!--====================   footer  Section  ====================-->
+        <div class="bottom-section">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+
+
+            <p>© Copyright 2024 HSMTechie (Pvt) Ltd.</p>
+        </div>
+
+    </form>
+</body>
+</html>
